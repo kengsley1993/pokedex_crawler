@@ -84,7 +84,7 @@ ROBOTSTXT_OBEY = False
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 
 ITEM_PIPELINES = {
-    'pokedex.pipelines.ImagePipeline': 300,
+    'pokedex.pipelines.FilePipeline': 300,
     # 'pokedex.pipelines.MongoPipeline': 301,
     'pokedex.pipelines.MysqlPipeline': 302,
 }

@@ -55,7 +55,7 @@ class MysqlPipeline():
 		self.db.commit()
 		return item
 
-class ImagePipeline(FilesPipeline):
+class FilePipeline(FilesPipeline):
 	def file_path(self, request, response=None, info=None):
 		url = request.url
 		file_name = url.split('/')[-1].split('.')[0] +"/"+ url.split('/')[-2] + "_" + url.split('/')[-1]
